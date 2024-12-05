@@ -1,0 +1,199 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    color: black;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* Navigation Bar */
+
+.nav {
+
+    position: fixed;
+}
+
+.nav-bar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    /* top: 0; */
+}
+
+.nav-bar img {
+    width: 30%;
+    height: auto;
+
+}
+
+/* this will make the rgb color for Ahmad @... we can use it like a functiuon */
+@keyframes colorChange {
+
+    0% {
+        color: black;
+    }
+
+    75% {
+        color: green;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+
+
+.nav-bar h1:hover {
+    color: green;
+    transition: ease 0.2s;
+
+
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: left;
+}
+
+.nav-list li {
+    font-weight: 600;
+
+}
+
+.nav-list a {
+    color: black;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+.nav-list a:hover {
+    color: green;
+    transition: ease 0.2s;
+
+}
+
+
+
+/* Main body  home */
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Ensures elements are stacked vertically */
+    text-align: center;
+    /* Centers text in the section */
+    font-size: 70px;
+    background-image: url(attachments/dr7.jpg);
+    background-size: cover;
+
+}
+
+.block {
+
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    flex-direction: column;
+    /* Ensures items are aligned vertically */
+    color: white;
+}
+
+
+#ani-wel {
+    animation: colorChange 3s infinite;
+}
+
+#wel-gif {
+    width: 21%;
+    height: auto;
+
+}
+
+#contact-btn {
+    font-size: large;
+    display: inline-block;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    border-style: none;
+}
+
+#contact-btn:hover {
+    transition: ease 0.2s;
+    background-color: darkgreen;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    padding: 35px 0;
+    background-color: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 1);
+    height: 220px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.layer1 {
+
+    justify-content: center;
+    gap: 450px;
+    display: flex;
+}
+
+.layer2 {
+
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+li {
+    margin: 10px;
+}
+
+footer img {
+    width: 23%;
+    height: auto;
+}
